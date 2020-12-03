@@ -17,7 +17,7 @@ jobs:
           git pull --rebase
           chmod +x ./bin/youtube-dl
           ./bin/youtube-dl --config-location config.txt
-          tar -I zstd -cf downloads.tar.zst downloads/*.mp4
+          tar -I zstd -cf downloads.tar.zst downloads/*.mkv
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
